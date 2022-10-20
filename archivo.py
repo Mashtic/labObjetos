@@ -1,7 +1,7 @@
 # Creado por: Ian Steven Coto Soto, Fabián Araya
-# Fecha de creación: 12/10/2022 06:57 am
-# Última modificación: 12/10/2022 07:26 am
-# Versión: 3.10.7
+# Fecha de creación: 19/10/2022 08:31 pm
+# Última modificación: 20/10/2022 11:20 am
+# Versión: 3.10.8
 
 # Importar librerías
 import pickle # Para poder usar archivos
@@ -12,14 +12,14 @@ import pickle # Para poder usar archivos
 def leerArchivo(nomArchLeer):
     """
     Funcionalidad: lee los datos del archivo y los retorna como
-                   diccionario
+                   lista
     Entradas: nomArchLeer (str): nombre que se le da al archivo
-    Salidas: diccDatos (dict): datos del archivo como dict
+    Salidas: listaDatos (list): datos del archivo como lista
     """
-    listaDatos = [] # Inicializa diccionario
+    listaDatos = [] # Inicializa lista
     try:
         file = open(nomArchLeer, "rb") # Abre el archivo para leer
-        listaDatos = pickle.load(file) # Carga los datos en el diccionario
+        listaDatos = pickle.load(file) # Carga los datos en la lista
         file.close() # Lo cierra
     except:
         print("El archivo " + nomArchLeer + " no existe o se encuentra vacío.") # Avisa al usuario
