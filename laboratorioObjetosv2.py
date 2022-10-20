@@ -1,99 +1,106 @@
-###########################################################
-#Elaborado por: XXX
-#Fecha de Realización: XX/XX/XXXX XX:XX
-#Ultima actualización: XX/XX/XXXX XX:XX
-###########################################################
+# Creado por: Ian Steven Coto Soto, Fabián Araya
+# Fecha de creación: 19/10/2022 08:31 pm
+# Última modificación: 20/10/2022 01:43 pm
+# Versión: 3.10.8
 
-#Importación de librerías
-import pickle
+# Definción de clases
 
-#Definición de variables globales
-
-#Definción de clases
-class Compa:
-    """Definición de Atributos de la clase"""
+class Miembro:
 
     """Definición de los métodos de la clase"""
     def __init__(self):
         """
-        Método constructor = Crea la estructura de la clase perro
+        Método constructor = Crea la estructura de la clase Miembro
         Método que se llama al instanciar
         """
-        self.nombre=()
-        self.cedula=0
-        self.categoria=[]
-        self.estado=True
+        self.nombre = ()
+        self.cedula = 0
+        self.categoria = []
+        self.estado = True
    
-    def asignarNombre(self, nom, ape1, ape2):
+    def asignarNombre(self, pNom, pApe1, pApe2):
         """
-        F: Asigna el nombre a una mascota
-        E: el nombre del perro (string)
-        S: Asigna un nombre al atributo nombre del perro
+        Función: asigna el nombre al miembro
+        Entrada: nom, ape1, ape2 (string): nombre y dos apellidos
+        Salida: asigna un nombre al atributo nombre del miembro
         """   
-        nombrecom=[]
-        nombrecom.append(nom)
-        nombrecom.append(ape1)
-        nombrecom.append(ape2)
-        self.nombre=tuple(nombrecom)
+        nombrecom = []
+        nombrecom.append(pNom)
+        nombrecom.append(pApe1)
+        nombrecom.append(pApe2)
+        self.nombre = tuple(nombrecom)
         return
     
-    def asignarCedula(self,pcedula):
+    def asignarCedula(self, pCedula):
         """
-        F: Asigna la raza de la mascota
-        E: Nombre de la raza del perro (string)
-        S: Asigna la raza al atributo raza del perro
-        """
-        self.cedula=pcedula
+        Función: asigna la cédula al miembro
+        Entrada: pCedula (int)
+        Salida: asigna la cédula al atributo cédula del miembro
+        """   
+        self.cedula = pCedula
         return
     
-    def asignarCategoria(self, pnum, pstring):
+    def asignarCategoria(self, pCateg, pPersIniciales):
         """
-        F: Asigna la Edad de la mascota
-        E: La edad del perro (int)
-        S: Asigna la edad al atributo edad del perro
-        """
-        
-        self.categoria.append(pnum)
-        self.categoria.append(pstring)
+        Función: asigna la categoría al miembro
+        Entrada: pCateg (int) (1-4)
+                 pPersIniciales (str)
+        Salida: asigna la categoría al atributo categoria del miembro
+        """   
+        self.categoria.append(pCateg)
+        self.categoria.append(pPersIniciales)
         return
     
-    def asignarEstado(self,pestado):
+    def asignarEstado(self, pEstado):
         """
-        F: Define el color del pelo del perro
-        E: El código del color del perro (int)
-        S: Asigna el color del pelo al atributo color del perro
-        """ 
-        self.estado=pestado
+        Función: asigna el estado al miembro
+        Entrada: pEstado (bool)
+        Salida: asigna el estado al atributo estado del miembro
+        """  
+        self.estado = pEstado
         return
+
+    def obtenerNombre(self):
+        """
+        Función: devuelve el atributo nombre del miembro
+        Entrada: N/A
+        Salida: self.nombre (tuple)
+        """  
+        return self.nombre
+    
+    def obtenerCedula(self):
+        """
+        Función: devuelve el atributo cedula del miembro
+        Entrada: N/A
+        Salida: self.cedula (int)
+        """  
+        return self.cedula
+
+    def obtenerCategoria(self):
+        """
+        Función: devuelve el atributo categoria del miembro
+        Entrada: N/A
+        Salida: self.categoria (list)
+        """  
+        return self.categoria
+
+    def obtenerEstado(self):
+        """
+        Función: devuelve el atributo estado del miembro
+        Entrada: N/A
+        Salida: self.estado (bool)
+        """  
+        return self.estado
     
     def obtenerInfo(self):
         """
-        F:Devuelve sólo el nombre del perro. 
-        E:NA
-        S:Nombre del perro
-        """
+        Función: devuelve todos los atributos del miembro
+        Entrada: N/A
+        Salida: self.nombre (tuple) 
+                self.cedula (int)
+                self.categoria (list)
+                self.estado (bool)
+        """  
         return self.nombre, self.cedula, self.categoria, self.estado
 
-##########################
-####Programa Principal####
-##########################
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
