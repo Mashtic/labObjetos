@@ -6,11 +6,13 @@
 
 # Librerias importadas
 from funcionesObjetos import * # Se importan las funciones del archivo para ser llamadas
-                        # según la opción solicitada
+                               # según la opción solicitada
 import re
 
 # Definir funciones E/S y validaciones
+
 '------------------ Insertar miembro --------------------'
+
 def insertarMiembroAux(cant):
     """
     Funcionalidad: valida datos de entrada
@@ -32,10 +34,11 @@ def insertarMiembroES():
     Salidas: resultado insertarMiembroAux (list) o mensaje de retroalimentación
              para realizar corrección (str)
     """
-    cant=input("Digite la cantidad de personas conforman el grupo de trabajo: ")
+    cant=input("\nDigite la cantidad de personas conforman el grupo de trabajo: ")
     return insertarMiembroAux(cant)
 
 '------------------ 1. Modificar miembro --------------------'
+
 def modificarMiembroAux(listaMiembros, pCedula):
     """
     Funcionalidad: valida datos de entrada
@@ -56,7 +59,9 @@ def modificarMiembroES(listaMiembros):
     """
     cedula = validarCedula()
     return modificarMiembroAux(listaMiembros, cedula)
+
 '------------------ 2. Eliminar miembro --------------------'
+
 def eliminarMiembroAux(listamiembros, cedula):
     """
     Funcionalidad: valida datos de entrada
@@ -80,14 +85,16 @@ def eliminarMiembroES(listamiembros):
     return print(eliminarMiembroAux(listamiembros, cedula))
 
 '------------------ 3. Reporte completo --------------------'
+# No se hacen funciones de E/S o validaciones
 
 '------------------ 4. Reporte categorías --------------------'
+
 def reporteCategoriaAux(listamiembros, categoria):
     if re.match("[1-4]", categoria):
         categoria=int(categoria)
         return reporteCategoria(listamiembros, categoria) 
     else:
-        return "La categoría indicada no es válida"
+        return "La categoría indicada no es válida."
 
 def reporteCategoriaES(listamiembros):
     print("Categorías:\n1. Analista\n2. Diplomáticos\n3. Centinelas\n4. Exploradores")
@@ -145,26 +152,26 @@ def menu():
         if opcion == '1': # Si es igual a la opción, entra y llama a la respectiva función
                           # Muestra al usuario el número de reto
                           # y qué hace
-            print("Opción 1")
+            print("\nOpción 1.")
             modificarMiembroES(listamiembros)
         elif opcion == '2':
-            print("Opción 2")
+            print("\nOpción 2.")
             eliminarMiembroES(listamiembros)
         elif opcion == '3':
-            print("Opción 3")
+            print("\nOpción 3.")
             print(reporteCompleto(listamiembros))
         elif opcion == '4':
-            print("Opción 4")
+            print("\nOpción 4.")
             reporteCategoriaES(listamiembros)
         elif opcion == '5':
-            print("Opción 5")
+            print("\nOpción 5.")
             print(reporteIndividualES(listamiembros))
         elif opcion == '0': # Cuando se introduce 0, termina el ciclo con un break
             break  
         else: # Si no selecciona ninguna de las opciones, muestra el mensaje y
               # vuelve al comienzo del ciclo
             print("Indique una opción según las indicadas previamente.")
-    return print("Gracias por usar el programa!")
+    return print("\n¡Gracias por usar el programa!")
 
 
 # Programa principal

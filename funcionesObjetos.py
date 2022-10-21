@@ -141,6 +141,7 @@ def persMiembro(pPersonalidad):
             return listaPersCompleto[posicion][listaPersInicial.index(pPersonalidad)] # Busca en la lista con las palabras
                                                                                       # de personalida y la devuelve de
                                                                                       # acuerdo a la misma posición
+                                                                                      
 # Funciones principales
 '------------------ Insertar miembro --------------------'
 
@@ -186,7 +187,6 @@ def modificarMiembro(listaMiembros, pCedula):
 
 '------------------ 2. Eliminar miembro --------------------'
 
-# Funciones
 def eliminarMiembro(listamiembros, cedula):
     """
     Funcionalidad: Elimina un miembro de la reunión
@@ -237,8 +237,6 @@ def reporteCompleto(listaMiembros):
     return "\nReporte finalizado."
 
 '------------------ 4. Reporte categorías --------------------'
-
-# Funciones
 
 def reporteCategoria(listamiembros, categoria):
     """
