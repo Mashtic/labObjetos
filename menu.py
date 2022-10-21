@@ -5,9 +5,10 @@
 #Variables globales
 
 # Librerias importadas
-from funcionesObjetos import * # Se importan las funciones del archivo para ser llamadas
-                               # según la opción solicitada
+from funciones import * # Se importan las funciones del archivo para ser llamadas
+                        # según la opción solicitada
 import re
+
 
 # Definir funciones E/S y validaciones
 

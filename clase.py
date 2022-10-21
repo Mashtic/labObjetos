@@ -102,3 +102,4 @@ class Miembro:
                 self.estado (bool)
         """  
         return self.nombre, self.cedula, self.categoria, self.estado
+

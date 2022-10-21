@@ -7,8 +7,8 @@
 from names import *
 import random
 import re
-from laboratorioObjetosv2 import *
-from archivo import *
+from clase import *
+from archivos import *
 
 # Definición de variables globales
 
