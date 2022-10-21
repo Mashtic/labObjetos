@@ -1,6 +1,6 @@
 #Elaborado por: Ian Coto Soto, Fabián Araya Ortega
-#Fecha de creación: 28/09/2022 3:35 pm
-#Fecha de modificación 30/09/2022 8:35 pm
+#Fecha de creación: 19/10/2022 3:35 pm
+#Fecha de modificación 20/10/2022 6:00 pm
 #Versión de Python 3.10.6
 #Variables globales
 

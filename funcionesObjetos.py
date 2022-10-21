@@ -1,6 +1,6 @@
 # Creado por: Ian Steven Coto Soto, Fabián Araya
 # Fecha de creación: 19/10/2022 08:31 pm
-# Última modificación: 20/10/2022 XX:XX pm
+# Última modificación: 20/10/2022 6:00 pm
 # Versión: 3.10.8
 
 # Librerías utilizadas
